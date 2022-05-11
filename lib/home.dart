@@ -24,12 +24,7 @@ class _HomeState extends State<Home> {
     return Scaffold(
       appBar: AppBar(
         iconTheme: const IconThemeData(color: Colors.grey),
-        backgroundColor: Colors.white,
-        title: Image.asset(
-          "imagens/totvs.png",
-          width: 98,
-          height: 22,
-        ),
+        backgroundColor: const Color.fromARGB(255, 46, 148, 49),
       ),
       body: telas[_indiceAtual],
       bottomNavigationBar: BottomNavigationBar(
@@ -40,12 +35,12 @@ class _HomeState extends State<Home> {
             });
           },
           type: BottomNavigationBarType.fixed,
-          fixedColor: Colors.red,
+          fixedColor: const Color.fromARGB(255, 46, 148, 49),
           items: const [
             BottomNavigationBarItem(
-                label: 'Reader', icon: Icon(Icons.read_more)),
+                label: 'Reader', icon: Icon(Icons.linked_camera)),
             BottomNavigationBarItem(
-                label: 'Devices', icon: Icon(Icons.device_hub)),
+                label: 'Devices', icon: Icon(Icons.devices)),
             BottomNavigationBarItem(
                 label: 'Payment', icon: Icon(Icons.payment)),
           ]),

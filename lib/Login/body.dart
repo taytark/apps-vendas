@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:second/Login/cadastro.dart';
+import 'package:second/home.dart';
 
 class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);
@@ -71,7 +72,12 @@ class _LoginState extends State<Login> {
                       padding: const EdgeInsets.fromLTRB(32, 16, 32, 16),
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(32)),
-                      onPressed: () {}),
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const Home()));
+                      }),
                 ),
                 Center(
                   child: GestureDetector(
