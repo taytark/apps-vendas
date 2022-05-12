@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Devices extends StatefulWidget {
-  const Devices({Key? key}) : super(key: key);
+  const Devices({key}) : super(key: key);
 
   @override
   State<Devices> createState() => _DevicesState();

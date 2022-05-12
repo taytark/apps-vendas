@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 
 class Cadastro extends StatefulWidget {
-  const Cadastro({Key? key}) : super(key: key);
+  const Cadastro({key}) : super(key: key);
 
   @override
   _CadastroState createState() => _CadastroState();

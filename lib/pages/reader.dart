@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
 
 class Reader extends StatefulWidget {
-  const Reader({Key? key}) : super(key: key);
+  const Reader({key}) : super(key: key);
 
   @override
   State<Reader> createState() => _ReaderState();
@@ -16,7 +16,7 @@ class _ReaderState extends State<Reader> {
 
   readQRCode() async {
     String code = await FlutterBarcodeScanner.scanBarcode(
-        "Colors.red", "Cancelar", false, ScanMode.QR);
+        "#FFFFFF", "Cancelar", false, ScanMode.BARCODE);
     setState(() => ticket = code != '-1' ? code : 'Não validado');
   }
 
