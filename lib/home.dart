@@ -16,7 +16,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     List<Widget> telas = [
-      const Code(),
+      const Reader(),
       const Devices(),
       const Pay(),
     ];
